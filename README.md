@@ -6,7 +6,6 @@ Code accompanying [Collision to Cognition: Hash-Driven Graph Construction for Ef
 
 MeshRAG organizes corpus passages into a two-level graph using locality-sensitive hashing. Chunks sharing hash buckets form candidate neighbors, and their closest hash neighbors become chunk-level edges. Collision buckets also seed overlapping communities, which are consolidated by passage overlap. A passage may belong to multiple communities.
 
-Questions are decomposed into sequential sub-questions. Each retrieval query uses the same hashing scheme as the corpus. Hash-nearest chunks, their graph neighbors and relevant community members form a candidate pool. Sentence-BERT reranks only this pool and selects the passages used to answer the sub-question.
 
 ## Run on HotpotQA
 
