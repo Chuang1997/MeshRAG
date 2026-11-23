@@ -1,0 +1,35 @@
+{
+  "dataset": "HotpotQA",
+  "questions": 200,
+  "corpus_passages": 9811,
+  "model": "deepseek-flash",
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "scores": {
+    "ContainsMatch": 0.67,
+    "LLMAccuracy": 0.81
+  },
+  "correct": {
+    "ContainsMatch": 134,
+    "LLMAccuracy": 162
+  },
+  "graph": {
+    "chunks": 9811,
+    "edges": 90284,
+    "communities": 12812,
+    "chunks_in_communities": 9421
+  },
+  "retrieval": {
+    "retrieval_calls": 509,
+    "corpus_size": 9811,
+    "candidate_mean": 253.34,
+    "candidate_median": 253.0,
+    "candidate_min": 58,
+    "candidate_max": 505,
+    "candidate_p95": 360.7999999999999,
+    "mean_corpus_percent": 2.582162397805759,
+    "median_corpus_percent": 2.5787381510549383,
+    "min_corpus_percent": 0.5911731729691163,
+    "max_corpus_percent": 5.1472836611966155,
+    "p95_corpus_percent": 3.677504841504433
+  }
+}
